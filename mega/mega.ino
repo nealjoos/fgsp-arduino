@@ -33,12 +33,12 @@ int snelheidLinks = 0;
 int snelheidRechts = 0;
 
 //Uitgangen Snelheid
-const int outputLinks = 2;
-const int outputRechts = 3;
-const int outputSpoor1 = 4;
-const int outputSpoor2 = 5;
-const int outputZijSpoor1 = 6;
-const int outputZijSpoor2 = 7;
+#define outputLinks 2
+#define outputRechts 3
+#define outputSpoor1 4
+#define outputSpoor2 5
+#define outputZijSpoor1 6
+#define outputZijSpoor2 7
 
 //Wissels
 //De rust positie van de wissels laat de trein rijden op de buiten cirkel (geen zijsporen)
@@ -48,10 +48,10 @@ boolean wisselSporen2_Rechts = 0;
 boolean wisselSporen2_Links = 0;
 
 //Uitgangen Wissels
-const int outputWisselSporen1_Rechts = 37;
-const int outputWisselSporen1_Links = 38;
-const int outputWisselSporen2_Rechts = 39;
-const int outputWisselSporen2_Links = 40;
+#define outputWisselSporen1_Rechts 37
+#define outputWisselSporen1_Links 38
+#define outputWisselSporen2_Rechts 39
+#define outputWisselSporen2_Links 40
 
 //Ompolers
 //De rust positie van de ompolers laat de trein rijden in wijzerzin
@@ -62,12 +62,12 @@ boolean ompolerSpoor2 = 0;
 boolean ompolerZijSpoor1 = 0;
 boolean ompolerSpoor1 = 0;
 //Uitgangen Ompolers
-const int outputOmpolerRechts = 43;
-const int outputOmpolerLinks = 44;
-const int outputOmpolerZijSpoor2 = 45;
-const int outputOmpolerSpoor2 = 46;
-const int outputOmpolerZijSpoor1 = 47;
-const int outputOmpolerSpoor1 = 48;
+#define outputOmpolerRechts 43
+#define outputOmpolerLinks 44
+#define outputOmpolerZijSpoor2 45
+#define outputOmpolerSpoor2 46
+#define outputOmpolerZijSpoor1 47
+#define outputOmpolerSpoor1 48
 
 //Reed sensoren
 boolean reedSpoor1Links;
@@ -84,26 +84,26 @@ boolean reedRechtsSpoor1;
 boolean reedRechtsSpoor2;
 
 //Input Reed
-const int inputReedSpoor1Links = A0;
-const int inputReedSpoor1Rechts = A1;
-const int inputReedZijSpoor1Links = A2;
-const int inputReedZijSpoor1Rechts = A3;
-const int inputReedSpoor2Links = A4;
-const int inputReedSpoor2Rechts = A5;
-const int inputReedZijSpoor2Links = A6;
-const int inputReedZijSpoor2Rechts = A7;
-const int inputReedLinksSpoor1 = A8;
-const int inputReedLinksSpoor2 = A9;
-const int inputReedRechtsSpoor1 = A10;
-const int inputReedRechtsSpoor2 = A11;
+#define inputReedSpoor1Links A0
+#define inputReedSpoor1Rechts A1
+#define inputReedZijSpoor1Links A2
+#define inputReedZijSpoor1Rechts A3
+#define inputReedSpoor2Links A4
+#define inputReedSpoor2Rechts A5
+#define inputReedZijSpoor2Links A6
+#define inputReedZijSpoor2Rechts A7
+#define inputReedLinksSpoor1 A8
+#define inputReedLinksSpoor2 A9
+#define inputReedRechtsSpoor1 A10
+#define inputReedRechtsSpoor2 A11
 
 //Reed Sleutelschakelaar
 boolean SleutelLinks;
 boolean SleutelRechts;
 
 //Input Sleutelschakelaar
-const int inputSleutelLinks = A14;
-const int inputSleutelRechts = A15;
+#define inputSleutelLinks A14
+#define inputSleutelRechts A15
 
 //voids dit moet je toevoegen bij platformio in de arduino ide is dit niet nodig maar kan geen kwaad
 void rijdenWijzersin(String start, String stop);
