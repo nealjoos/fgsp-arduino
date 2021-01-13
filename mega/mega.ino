@@ -13,10 +13,13 @@
       De gevoeligheid van de reedcontacten kun je instellen onder de variable reedContactTrigger > (Extra variablen, juist boven setup())
       Voorlopig staat het op de heft van het analoge gebied (512).
 
-      TODO: - Toevoegen van de zijsporen in rijdenWijzersin
-            - rijdenTegenWijzersin
+      TODO: 
+        - !! Pinouts controleren !!
+        - Integratie wissels (zijsporen)
+        - Rijden in tegenwijzerzin
+        Optioneel: 
+            - Resetfunctie
             - Servo's (incl. sleutelschakelaar en LED strips)
-            - reset()
             - Bezette sporen status (bool)
 */
 
@@ -48,10 +51,11 @@ boolean wisselSporen2_Rechts = 0;
 boolean wisselSporen2_Links = 0;
 
 //Uitgangen Wissels
-#define outputWisselSporen1_Rechts 37
-#define outputWisselSporen1_Links 38
-#define outputWisselSporen2_Rechts 39
-#define outputWisselSporen2_Links 40
+#define outputWisselSporen1_Rechts 32
+#define outputWisselSporen1_Links 33
+#define outputWisselSporen2_Rechts 34
+#define outputWisselSporen2_Links 35
+#define outputWisselActivator 36
 
 //Ompolers
 //De rust positie van de ompolers laat de trein rijden in wijzerzin
@@ -61,6 +65,7 @@ boolean ompolerZijSpoor2 = 0;
 boolean ompolerSpoor2 = 0;
 boolean ompolerZijSpoor1 = 0;
 boolean ompolerSpoor1 = 0;
+
 //Uitgangen Ompolers
 #define outputOmpolerRechts 43
 #define outputOmpolerLinks 44
@@ -155,7 +160,7 @@ void setup() {
   pinMode(outputWisselSporen1_Rechts, OUTPUT);
   pinMode(outputWisselSporen2_Links, OUTPUT);
   pinMode(outputWisselSporen2_Rechts, OUTPUT);
-
+  pinMode(outputWisselActivator, OUTPUT);
 }
 
 void loop() {
