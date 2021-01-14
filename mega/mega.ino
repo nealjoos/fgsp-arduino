@@ -1,6 +1,10 @@
-/* FGSP Testbaan
+/*  FGSP - Testbaan - mega.ino
     Code: Jorik Wittevrongel, Neal Joos
+    Deze code valt onder de MIT licentie (https://github.com/nealjoos/fgsp-arduino/blob/main/LICENSE.md)
+! BOVENSTAANDE INFO MAG NIET GEWIJZIGD OF VERWIJDERD WORDEN !
+*/
 
+/*
     De begin en einde bestemming wordt voorlopig ingegeven via de seriele monitior
 
     INSTELLINGEN SERIËLE COMMUNICATIE: 115200 baud

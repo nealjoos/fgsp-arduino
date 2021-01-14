@@ -1,7 +1,13 @@
-/*  FGSP Testbaan
- *  Code: Neal Joos
+/*  FGSP - Testbaan - nodemcu.ino
+    Code: Neal Joos
+    Deze code valt onder de MIT licentie (https://github.com/nealjoos/fgsp-arduino/blob/main/LICENSE.md)
+! BOVENSTAANDE INFO MAG NIET GEWIJZIGD OF VERWIJDERD WORDEN !
+*/
+
+/*
     NodeMcu code voor het aansturen van de testbaan
-    Dit programma zorgt ervoor dat de webserver wordt opgestart, de webbestanden van de micro SD kaart haalt en de communicatie verzorgt tussen de webclient en de Arduino Mega
+    Dit programma zorgt ervoor dat de webserver wordt opgestart, de webbestanden van de micro SD kaart haalt en de communicatie verzorgt tussen de webclient en de Arduino Mega.
+
 
     Opmerkingen over de code
     - namen van bestanden op de SD kaart mogen max. 8 tekens bevatten!
