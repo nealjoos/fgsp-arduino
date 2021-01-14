@@ -173,8 +173,8 @@ void setup() { //en de setup, deze zet je in codes met meerdere loops best onder
   Serial.begin(115200); //opent de debug poort met een bepaalde snelheid
   WiFi.mode(WIFI_AP_STA); //belangrijk: dit laat de Nodemcu weten hoe hij moet werken: als Access Point (transmitter, WIFI_AP), Client (de bezoeker/station, WIFI_STA) of een combinatie (WIFI_AP_STA)
   WiFi.softAP(ssid); //maakt een Access point met de ssid, hier is de password char verwijderd zodat er geen beveiligin is op het netwerk
-  IPAddress ip(192, 168, 0, 1);
-  IPAddress gateway(192, 168, 0, 254);
+  IPAddress ip(10, 0, 0, 1);
+  IPAddress gateway(10, 0, 0, 254);
   IPAddress subnet(255, 255, 255, 0);
   WiFi.config(ip, gateway, subnet);
 
